@@ -13,3 +13,9 @@ This is a responsive React-based website with smooth scrolling and animated navi
 React: JavaScript library for building user interfaces.
 Tailwind CSS: Utility-first CSS framework.
 Locomotive Scroll: Library for smooth scrolling and parallax effects.
+
+
+
+
+
+![screencapture-localhost-5173-2024-08-28-15_04_10](https://github.com/user-attachments/assets/38927c9e-7808-4f9e-bd71-25dcfa13b09e)
