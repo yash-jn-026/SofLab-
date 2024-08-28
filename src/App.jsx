@@ -26,35 +26,58 @@ function App() {
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      // Optional settings
-      smoothMobile: true,
-      getDirection: true,
+      smoothMobile: true,  // Enable smooth scrolling on mobile
+      getDirection: true,  // Track scroll direction
     });
 
     return () => {
-      if (scroll) scroll.destroy();
+      if (scroll) scroll.destroy();  // Clean up on unmount
     };
   }, []);
 
   return (
-    <>
-      <div className="main max-w-screen-2xl m-auto min-w-min" ref={scrollRef} data-scroll-container>
+    <div ref={scrollRef} data-scroll-container className="main max-w-screen-2xl m-auto min-w-min">
+      <div data-scroll-section>
         <Herosection />
-        <WhyChooseUs />
-        <AboutUs />
-        <Statis />
-        <TeamSection />
-        <TestimonialsSection />
-        <ValuesSection />
-        <TabSection />
-        <GridGallery />
-        <FAQSection />
-        <BlogSection />
-        <PricingSection />
-        <ContactSection />
-        <Footer />
       </div>
-    </>
+      <div data-scroll-section>
+        <WhyChooseUs />
+      </div>
+      <div data-scroll-section>
+        <AboutUs />
+      </div>
+      <div data-scroll-section>
+        <Statis />
+      </div>
+      <div data-scroll-section>
+        <TeamSection />
+      </div>
+      <div data-scroll-section>
+        <TestimonialsSection />
+      </div>
+      <div data-scroll-section>
+        <ValuesSection />
+      </div>
+      <div data-scroll-section>
+        <TabSection />
+      </div>
+      <div data-scroll-section>
+        <GridGallery />
+      </div>
+      <div data-scroll-section>
+        <FAQSection />
+      </div>
+      <div data-scroll-section>
+        <BlogSection />
+      </div>
+      <div data-scroll-section>
+        <PricingSection />
+      </div>
+      <div data-scroll-section>
+        <ContactSection />
+      </div>
+      <Footer />
+    </div>
   );
 }
 
